@@ -22,14 +22,14 @@ It acts as a personal code library for performance benchmarking, scientific comp
 ```
 ---
 
-##🛠️ Key Topics CoveredCore 
+### 🛠️ Key Topics CoveredCore 
 * Algorithms: Sorting, searching, recursion, dynamic programming, and complexity analysis ($\mathcal{O}(n)$ evaluation).
 * Mathematical Methods: Matrix decompositions, root-finding algorithms, and statistical modeling.
 * Vectorization & Speed: Transitioning standard loops into vectorized operations using NumPy and JAX acceleration.
 * OOP & Design Patterns: Object-oriented design applied to data processing pipelines.
 
 ---
-##👤 Author
+### 👤 Author
 Pablo Adrián Cárdenas Mendívil (Cuervo Blanco)
 
 M.Sc. in Physics | Quantum ML & High-Performance Data Engineering
