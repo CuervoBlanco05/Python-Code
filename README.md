@@ -1,10 +1,10 @@
-# 🐍 Python Scientific & Algorithmic Code Reference
+# Python Scientific & Algorithmic Code Reference
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-High_Performance-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
-## 📌 Overview
+## Overview
 This repository serves as a structured collection of algorithms, numerical methods, data structures, and Machine Learning concepts implemented from first principles in Python.
 
 It acts as a personal code library for performance benchmarking, scientific computing experiments, and technical reference for production analytics.
@@ -29,7 +29,7 @@ It acts as a personal code library for performance benchmarking, scientific comp
 * OOP & Design Patterns: Object-oriented design applied to data processing pipelines.
 
 ---
-### 👤 Author
+###  Author
 Pablo Adrián Cárdenas Mendívil (Cuervo Blanco)
 
 M.Sc. in Physics | Quantum ML & High-Performance Data Engineering
