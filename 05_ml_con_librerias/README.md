@@ -10,7 +10,7 @@
 An end-to-end, hands-on learning path: the **same problem** (house-price prediction) is solved step by step
 with industry-standard tools. It complements `03_ml_from_scratch`, where the algorithms are implemented from first principles.
 
-##  Learning path
+## Learning path
 
 | # | Notebook (EN) | Notebook (ES) | What it covers |
 |---|---|---|---|
@@ -18,9 +18,9 @@ with industry-standard tools. It complements `03_ml_from_scratch`, where the alg
 | 02 | [`02_scikit_learn_en.ipynb`](02_scikit_learn_en.ipynb) | [`02_scikit_learn.ipynb`](02_scikit_learn.ipynb) | Leak-free `Pipeline` + `ColumnTransformer`, cross-validated model comparison, `GridSearchCV`, metrics, permutation importance, classification |
 | 03 | [`03_pytorch_en.ipynb`](03_pytorch_en.ipynb) | [`03_pytorch.ipynb`](03_pytorch.ipynb) | Tensors, autograd, gradient descent, MLP with a custom training loop and early stopping, saving/loading weights |
 
-Every notebook ends with ✏️ **exercises**.
+Every notebook ends with  **exercises**.
 
-## 📊 Results
+## Results
 
 | Model | Evaluation | RMSE | R² |
 |---|---|---|---|
@@ -32,7 +32,7 @@ Every notebook ends with ✏️ **exercises**.
 On small tabular data, a tuned gradient-boosting model performs on par with a neural network at a fraction of the effort.
 The notebooks discuss when deep learning is worth it.
 
-## 📦 Data
+## Data
 
 `datos/houses.csv` (English columns) and `datos/casas.csv` (Spanish columns) contain the same **synthetic** dataset
 (2,000 houses) with numeric and categorical features and deliberately injected missing values.
@@ -42,7 +42,7 @@ The ground-truth relationship is known, which makes it easy to validate models. 
 python datos/generar_datos.py
 ```
 
-##  Setup
+## Setup
 
 ```bash
 python -m venv .venv
@@ -54,7 +54,7 @@ jupyter lab
 > Run the notebooks from this folder (`05_ml_con_librerias/`) so that the `datos/...` paths resolve.
 > For GPU-enabled PyTorch, see https://pytorch.org/get-started/locally/.
 
-##  Next steps
+## Next steps
 1. Apply the notebook 02 workflow to a real dataset (Kaggle, UCI, `sklearn.datasets.fetch_california_housing`).
 2. PyTorch for images: `torchvision` + MNIST / CIFAR-10 with convolutional networks.
 3. Experiment tracking (MLflow) and dedicated gradient-boosting libraries (XGBoost, LightGBM).
