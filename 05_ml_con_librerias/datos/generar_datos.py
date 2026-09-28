@@ -4,7 +4,7 @@ Se usa un dataset sintético para no depender de descargas y para saber
 exactamente qué relación hay entre las variables (útil para validar modelos).
 
 Uso:
-    python generar_datos.py            # crea casas.csv en esta carpeta
+    python generar_datos.py            # crea casas.csv (español) y houses.csv (inglés)
 """
 from pathlib import Path
 
@@ -14,6 +14,17 @@ import pandas as pd
 SEMILLA = 42
 N_CASAS = 2_000
 BARRIOS = {"Centro": 1.35, "Norte": 1.15, "Sur": 0.90, "Periferia": 0.75}
+
+# Traducción para la versión en inglés (mismos datos, otros nombres)
+COLUMNAS_EN = {
+    "barrio": "neighborhood", "metros": "sqm", "habitaciones": "rooms",
+    "antiguedad": "age", "distancia_centro_km": "distance_center_km",
+    "tiene_cochera": "has_garage", "precio": "price",
+}
+VALORES_EN = {
+    "barrio": {"Centro": "Downtown", "Norte": "North", "Sur": "South", "Periferia": "Outskirts"},
+    "tiene_cochera": {"si": "yes", "no": "no"},
+}
 
 
 def generar(n: int = N_CASAS, semilla: int = SEMILLA) -> pd.DataFrame:
@@ -62,7 +73,13 @@ def generar(n: int = N_CASAS, semilla: int = SEMILLA) -> pd.DataFrame:
     return df
 
 
+def a_ingles(df: pd.DataFrame) -> pd.DataFrame:
+    return df.replace(VALORES_EN).rename(columns=COLUMNAS_EN)
+
+
 if __name__ == "__main__":
-    salida = Path(__file__).with_name("casas.csv")
-    generar().to_csv(salida, index=False)
-    print(f"Dataset guardado en {salida}")
+    carpeta = Path(__file__).parent
+    df = generar()
+    df.to_csv(carpeta / "casas.csv", index=False)
+    a_ingles(df).to_csv(carpeta / "houses.csv", index=False)
+    print(f"Datasets guardados en {carpeta}: casas.csv, houses.csv")
