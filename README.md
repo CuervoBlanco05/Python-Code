@@ -25,8 +25,8 @@ It acts as a personal code library for performance benchmarking, scientific comp
 Install dependencies with `pip install -r requirements.txt`.
 ---
 
-### 🛠️ Key Topics CoveredCore 
-* Algorithms: Sorting, searching, recursion, dynamic programming, and complexity analysis ($\mathcal{O}(n)$ evaluation).
+### 🛠️ Key Topics Covered
+* Core Algorithms: Sorting, searching, recursion, dynamic programming, and complexity analysis ($\mathcal{O}(n)$ evaluation).
 * Mathematical Methods: Matrix decompositions, root-finding algorithms, and statistical modeling.
 * Vectorization & Speed: Transitioning standard loops into vectorized operations using NumPy and JAX acceleration.
 * OOP & Design Patterns: Object-oriented design applied to data processing pipelines.
