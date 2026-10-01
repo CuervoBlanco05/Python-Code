@@ -1,0 +1,32 @@
+name: Notebooks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  run-notebooks:
+    name: Ejecutar notebooks de 05_ml_con_librerias
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          # PyTorch en versión CPU: mucho más ligera que la build con CUDA
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt nbmake pytest
+
+      - name: Ejecutar notebooks
+        working-directory: 05_ml_con_librerias
+        run: pytest --nbmake --nbmake-timeout=600 -v *.ipynb
