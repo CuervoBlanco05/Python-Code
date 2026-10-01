@@ -19,7 +19,8 @@ It acts as a personal code library for performance benchmarking, scientific comp
 ├── 02_scientific_computing/    # Numerical integration, linear algebra & vectorization
 ├── 03_ml_from_scratch/         # Gradient descent, KNN, and Neural Networks built without high-level APIs
 ├── 04_benchmarking/            # Execution speed comparisons (Cpython vs. Numba vs. JAX)
-└── 05_ml_con_librerias/        # Applied ML path (EN/ES): Pandas & Polars → Scikit-Learn → PyTorch
+├── 05_ml_con_librerias/        # Applied ML path (EN/ES): Pandas & Polars → Scikit-Learn → PyTorch
+└── 06_redes_neuronales/        # Guided exercises (EN/ES): build a neural network yourself, NumPy → PyTorch
 ```
 
 Install dependencies with `pip install -r requirements.txt`.
