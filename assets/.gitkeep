@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" shape-rendering="crispEdges">
+  <!-- Fondo -->
+  <rect width="400" height="300" fill="#0d1117"/>
+
+  <!-- Ventana de terminal -->
+  <rect x="80" y="60" width="240" height="160" fill="#1e1e2e"/>
+  <rect x="80" y="60" width="240" height="20" fill="#3a3a4a"/>
+  <rect x="90" y="66" width="8" height="8" fill="#ff5f56"/>
+  <rect x="104" y="66" width="8" height="8" fill="#ffbd2e"/>
+  <rect x="118" y="66" width="8" height="8" fill="#27c93f"/>
+
+  <!-- Texto de la terminal -->
+  <text x="95" y="105" font-family="monospace" font-size="14" fill="#39ff14">$ whoami</text>
+  <text x="95" y="125" font-family="monospace" font-size="14" fill="#39ff14">&gt; gato_pixel</text>
+  <text x="95" y="145" font-family="monospace" font-size="14" fill="#39ff14">$ _</text>
+
+  <!-- Cursor parpadeando -->
+  <rect x="125" y="133" width="9" height="14" fill="#39ff14">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Gato pixel (sentado, de frente) -->
+  <rect x="300" y="170" width="10" height="10" fill="#f5a623"/>  <!-- oreja izq -->
+  <rect x="340" y="170" width="10" height="10" fill="#f5a623"/>  <!-- oreja der -->
+  <rect x="300" y="180" width="50" height="40" fill="#f5a623"/>  <!-- cabeza -->
+  <rect x="312" y="192" width="8" height="8" fill="#0d1117"/>    <!-- ojo izq -->
+  <rect x="330" y="192" width="8" height="8" fill="#0d1117"/>    <!-- ojo der -->
+  <rect x="320" y="206" width="10" height="6" fill="#e0701a"/>   <!-- nariz -->
+  <rect x="305" y="220" width="40" height="40" fill="#f5a623"/>  <!-- cuerpo -->
+  <rect x="300" y="260" width="20" height="10" fill="#e0701a"/>  <!-- pata izq -->
+  <rect x="330" y="260" width="20" height="10" fill="#e0701a"/>  <!-- pata der -->
+  <rect x="350" y="240" width="10" height="10" fill="#f5a623"/>  <!-- cola -->
+  <rect x="360" y="230" width="10" height="20" fill="#f5a623"/>  <!-- cola -->
+</svg>
