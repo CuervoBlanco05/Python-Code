@@ -32,12 +32,21 @@ Install dependencies with `pip install -r requirements.txt`.
 * OOP & Design Patterns: Object-oriented design applied to data processing pipelines.
 
 ---
-###  Author
-Pablo Adrián Cárdenas Mendívil (Cuervo Blanco)
+<table>
+  <tr>
+    <td width="50%" align="center" valign="middle">
+      <img src="assets/cat.svg" width="400" alt="Gato en terminal">
+    </td>
+    <td width="50%" valign="middle">
+
+### Author
+
+**Pablo Adrián Cárdenas Mendívil** (Cuervo Blanco)
 
 M.Sc. in Physics | Quantum ML & High-Performance Data Engineering
 
-GitHub: @CuervoBlanco05
+GitHub: [@CuervoBlanco05](https://github.com/CuervoBlanco05)
 
----
-<img src="assets/cat.svg" width="400" alt="Gato en terminal">
+    </td>
+  </tr>
+</table>
